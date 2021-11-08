@@ -1,6 +1,10 @@
 var contactURLArray = [];
 var contactArray = [];
 var loadingContact = 0;
+<<<<<<< HEAD
+let statusCounter = 0;
+=======
+>>>>>>> 1172999b090bc345f23aa06fe9d4c15d0707e214
 
 // This index function needs to make two different calls as using 'JSON.stringify' on the response.json() does not format correctly via console.
 async function index() {
@@ -32,6 +36,10 @@ function contactR(){
 
 // This nextContact function stores contact objects into a contactArray and logs it to the DOM
 async function nextContact(URL) {
+<<<<<<< HEAD
+
+=======
+>>>>>>> 1172999b090bc345f23aa06fe9d4c15d0707e214
     console.log("URL: " + URL);
     const response = await fetch(URL)
     const contactResponse = await response.text()
@@ -41,6 +49,17 @@ async function nextContact(URL) {
     console.log("Contact: " + contact.firstName);
 
     contactArray.push(contact);
+<<<<<<< HEAD
+
+    document.getElementById("status").innerHTML = "status bar : " + statusCounter + "%";
+    statusCounter = statusCounter + 6;
+    if(statusCounter > 100){
+        statusCounter = 100
+    }
+    console.log(statusCounter)
+
+=======
+>>>>>>> 1172999b090bc345f23aa06fe9d4c15d0707e214
     document.getElementById("contacts").innerHTML = JSON.stringify(contactArray)
     console.log(contactArray)
 
