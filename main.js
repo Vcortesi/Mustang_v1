@@ -49,7 +49,6 @@ async function nextContact(URL) {
     if(statusCounter > 100){
         statusCounter = 100;
     }
-    console.log(statusCounter);
 
     document.getElementById("contacts").innerHTML = JSON.stringify(contactArray);
     console.log(contactArray);
@@ -61,7 +60,7 @@ async function nextContact(URL) {
     }
 
 }
-
+ 
 // Logs contactArray into console
 function logContacts() {
     console.log(contactArray);
