@@ -66,3 +66,4 @@ async function nextContact(URL) {
 function logContacts() {
     console.log(contactArray);
 }
+//
